@@ -5,7 +5,7 @@ phases:
       - npm install
       - npm run build
       - aws --version
-artifacts:
-  name: "build-output"
-  files:
-    - "dist/**/*"
+      - aws s3 sync dist/ s3://build-output-20230309
+# artifacts:
+#   files:
+#     - "dist/**/*"
