@@ -8,4 +8,4 @@ phases:
 artifacts:
   name: "build-output"
   files:
-    - "**/*"
+    - "dist/**/*"
